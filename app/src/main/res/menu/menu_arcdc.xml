@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.victo.arcdc.ARCDCActivity">
+
+    <group
+        android:id="@+id/menu_arcdc"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_arcdc_som"
+            android:title="Som"
+            android:icon="@drawable/ic_action_name_som"
+            android:checked="true"
+            />
+
+        <item
+            android:id="@+id/menu_arcdc_mute"
+            android:title="Mute"
+            android:icon="@drawable/ic_action_name_mute"
+            android:checked="false"/>
+
+    </group>
+</menu>

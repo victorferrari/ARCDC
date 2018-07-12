@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    android:background="#000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0ff1f1"
+            android:orientation="vertical"
+            tools:context="com.example.victo.arcdc.ComoJogarActivity">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_como_jogar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/contorno"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp"
+                        android:text="Comandos"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textStyle="bold|italic" />
+
+                </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/item_imagem_frente"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cima" />
+
+                <TextView
+                    android:id="@+id/item_texto_frente"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/contorno"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/anda_frente"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/item_imagem_tras"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/baixo" />
+
+                <TextView
+                    android:id="@+id/item_texto_tras"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/contorno"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/anda_tras"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/item_imagem_direita"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/direita" />
+
+                <TextView
+                    android:id="@+id/item_texto_direita"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/contorno"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/anda_direita"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/item_imagem_esquerda"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/esquerda" />
+
+                <TextView
+                    android:id="@+id/item_texto_esquerda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/contorno"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/anda_esquerda"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/item_imagem_gira_direita"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/gira_direita" />
+
+                <TextView
+                    android:id="@+id/item_texto_gira_direita"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/contorno"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/gira_direita"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp">
+
+                <ImageView
+                    android:id="@+id/item_imagem_gira_esquerda"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/gira_esquerda" />
+
+                <TextView
+                    android:id="@+id/item_texto_gira_esquerda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/contorno"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/gira_esquerda"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:textStyle="italic|bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.victo.arcdc.JogarActivity"
+    android:background="#0ff1f1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_jogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contorno"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arcdc"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+            android:paddingLeft="30dp"
+            android:textColor="#000"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:orientation = "vertical"
+            android:background="@drawable/contorno"
+            android:layout_marginTop="5dp">
+
+            <ListView
+                android:id="@+id/lista_comandos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation = "vertical"
+            android:background="@drawable/contorno"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp">
+
+            <GridView
+                android:id="@+id/tabela_comandos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:numColumns="3"
+                android:columnWidth="60dp"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp">
+
+            </GridView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

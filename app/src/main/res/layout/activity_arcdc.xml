@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#0ff1f1"
+        tools:context="com.example.victo.arcdc.ARCDCActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_arcdc"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/contorno"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="ARCDC"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp">
+
+            <Button
+                android:id="@+id/icone_jogar"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:background="@drawable/jogar" />
+
+            <Button
+                android:id="@+id/icone_como_jogar"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/como_jogar"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/icone_sair"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/sair"/>
+
+    </LinearLayout>
+
+</LinearLayout>

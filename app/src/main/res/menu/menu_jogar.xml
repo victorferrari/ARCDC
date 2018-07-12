@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.victo.arcdc.JogarActivity">
+
+    <item
+        android:id="@+id/menu_jogar_voltar"
+        android:icon="@drawable/ic_action_name_voltar"
+        android:title="Voltar"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_jogar_bluetooth"
+        android:icon="@drawable/ic_action_name_bluetooth"
+        android:title="Bluetooth"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_jogar_retirar"
+        android:icon="@drawable/ic_action_name_retirar"
+        android:title="Retirar"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/menu_jogar_enviar"
+        android:icon="@drawable/ic_action_name_enviar"
+        android:title="Enviar"
+        app:showAsAction="always"
+        />
+
+</menu>

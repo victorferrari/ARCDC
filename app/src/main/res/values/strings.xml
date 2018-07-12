@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ARCDC</string>
+    <string name="title_activity_como_jogar">ComoJogarActivity</string>
+    <string name="arcdc">ARCDC</string>
+    <string name="comandos">Comandos</string>
+    <string name="anda_frente">Robô anda para frente.</string>
+    <string name="anda_tras">Robô anda para trás.</string>
+    <string name="anda_direita">Robô anda para direita.</string>
+    <string name="anda_esquerda">Robô anda para esquerda.</string>
+    <string name="gira_direita">Robô gira para direita.</string>
+    <string name="gira_esquerda">Robô gira para esquerda.</string>
+</resources>
